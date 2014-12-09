@@ -1,0 +1,18 @@
+---
+subtitle: "Peer Assessment 1"
+title: "Coursera::Reproducible Research"
+author: "Felipe Campelo"
+date: "December 6, 2014"
+output: html_document
+---
+```{r config,echo=FALSE}
+library(knitr)
+opts_chunk$set(echo=TRUE)
+```
+
+First step: load the code
+```{r load,cache=TRUE}
+data<-read.table("activity.csv",header=T,sep=",")
+summary(data)
+```
+
